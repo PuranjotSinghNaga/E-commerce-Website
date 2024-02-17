@@ -8,7 +8,7 @@ body {
 .header {
   font-weight: 700;
   border: solid black 0.05rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .product {
@@ -20,4 +20,31 @@ body {
 .product_container {
   display: flex;
   flex-direction: row;
+}
+
+/* Header  */
+
+.logo{
+  padding-left: 20px;
+}
+
+nav ul{
+  margin-left: 1200px;
+}
+
+nav ul li{
+  
+  display: inline;
+  margin-left: 20px;
+}
+
+.search{
+  padding: 20px 400px;
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.bttn{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
