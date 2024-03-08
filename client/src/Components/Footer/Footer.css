@@ -1,0 +1,17 @@
+
+.container{
+    background-color: rgba(71, 71, 71, 0.675);
+    width: 90%;
+    height: 200px;
+    font-size: large;
+    font-weight: 900;
+    color: aliceblue;
+
+
+}
+.link{
+    display: flex;
+    /* padding-left: 200px; */
+    color: aliceblue;
+    
+}
