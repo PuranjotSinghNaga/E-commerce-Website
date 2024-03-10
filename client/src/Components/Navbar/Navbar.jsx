@@ -18,16 +18,16 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link  href="#action2"><img src="" alt="" />Cart</Nav.Link>
+            <Nav.Link href="#">Home</Nav.Link> {/*link the main page  */}
+            <Nav.Link  href="#action2"><img src="" alt="" />Login</Nav.Link> {/*link the link page  */}
             <NavDropdown title="Account" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">My Account</NavDropdown.Item>
+              <NavDropdown.Item href="#action3">My Account</NavDropdown.Item> {/*link the MY ACCOUNT page  */}
               <NavDropdown.Item href="#action4">
-                Your Orders
+                Your Orders  {/*link the orders page  */}
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
+              {/* <NavDropdown.Item href="#action5">
                 History
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
