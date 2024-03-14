@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from "../../Components/Navbar/Navbar"
+import { Link } from 'react-router-dom';
 import "./MY_Account.css"
 
 function MY_Account() {
   const Box1 = () => {
     return (
       <div className='style' style={{ backgroundColor: "#f0f0f0", padding: "20px",  }}>
-        <button><h2>Orders</h2>
-        <p>Track, return, or buy things again</p></button>
+        <h2>Orders</h2>
+        <p>Track, return, or buy things again</p>
       </div>
     );
   };
@@ -27,24 +27,24 @@ function MY_Account() {
       </div>
     );
   };
-
-
   
-
-
-
   return (
     <div>
-      <Navbar/>
       <div className='MyAccContainer'>
        <h1>My Account</h1>
        <div>
        <hr />
+       <Link to="/order">
         <Box1/> {/*connect Orders.jsx*/}
+       </Link>
         <hr />
+        <Link to = "/login">
         <Box2/> {/*link to login page*/}
+        </Link>
         <hr />
+        <Link>
         <Box3/>
+        </Link>
         <hr />
        </div>
 

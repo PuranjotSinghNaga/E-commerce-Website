@@ -2,6 +2,7 @@ import React from 'react'
 import "./Main.css"
 function Main() {
   return (
+    
     <div className="product" >
     <button><h2>Product Name</h2>
     <p>Product Price</p>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../../Components/Navbar/Navbar";
 import "./Orders.css";
 
 function Orders() {
@@ -41,7 +40,6 @@ function Orders() {
 
   return (
     <div>
-      <Navbar />
       <div className="head">
         <h2>Your Orders</h2>
         <input

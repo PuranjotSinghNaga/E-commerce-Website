@@ -4,13 +4,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
+
 
 
 function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">GET YOUR THINGS</Navbar.Brand>
+        <Navbar.Brand /*{as={NavLink}} to = "/home" */>GET YOUR THINGS</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,16 +20,11 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#">Home</Nav.Link> {/*link the main page  */}
-            <Nav.Link  href="#action2"><img src="" alt="" />Login</Nav.Link> {/*link the link page  */}
+            <Nav.Link as={NavLink} to="/">Home</Nav.Link> 
+            <Nav.Link  as={NavLink} to="/login" >Login</Nav.Link> 
             <NavDropdown title="Account" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">My Account</NavDropdown.Item> {/*link the MY ACCOUNT page  */}
-              <NavDropdown.Item href="#action4">
-                Your Orders  {/*link the orders page  */}
-              </NavDropdown.Item>
-              {/* <NavDropdown.Item href="#action5">
-                History
-              </NavDropdown.Item> */}
+              <NavDropdown.Item as={NavLink} to= "/myAcc" >My Account</NavDropdown.Item> 
+              <NavDropdown.Item as={NavLink} to= "/order" >Your Orders</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
