@@ -1,16 +1,23 @@
-
-.container{
-    background-color: rgba(71, 71, 71, 0.675);
-    width: 90%;
-    height: 200px;
-    font-size: large;
+footer{
+    background-color:#333333;
+    width: 100%;
+    height: 9rem;
+    font-size: 15px;
     font-weight: 900;
+    margin-top: auto;
     color: aliceblue;
-
-
-}
-.link{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+
+.link{
     /* padding-left: 200px; */
     color: aliceblue;
     
