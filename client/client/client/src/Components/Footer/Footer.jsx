@@ -4,10 +4,10 @@ import "./Footer.css"
 function Footer() {
   return (
   <footer>
-    <div className="container">
-       <hr />
-       <p className='copy'>@2024 Copyright <a className='link' href="#">About</a> <a className='link' href="#">Home</a> <a className='link'href="#">FAQs</a></p>
-    </div>
+       <p className='copy'>@2024 Copyright </p>
+       <p><a className='link' href="#">FAQs</a></p>
+       <p><a className='link' href="#">About</a> </p>
+       <p><a className='link' href="/">Home</a> </p>
   </footer>
   )
 }

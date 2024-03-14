@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import "./register.scss"
-import { Link } from "react-router-dom";
-
 
 const Register = ({ onRegister }) => {
   const [email, setEmail] = useState('');
@@ -14,10 +11,8 @@ const Register = ({ onRegister }) => {
   };
 
   return (
-    <div className="container4">
-    <form className="loginBox" onRegister={handleSubmit} >
-     <div className="main_form">
-     <label htmlFor="email">Email</label>
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">Email</label>
       <input
         type="email"
         id="email"
@@ -42,12 +37,7 @@ const Register = ({ onRegister }) => {
       />
 
       <button type="submit">Register</button>
-      <Link to="/login">
-      <button>Login</button>
-    </Link>
-    </div>
     </form>
-    </div>
   );
 };
 
